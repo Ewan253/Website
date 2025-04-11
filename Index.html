@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fish Finder Sumbit Page</title>
-    <link rel="icon" type="image/x-icon" href="https://www.pngfind.com/pngs/m/66-661223_png-file-svg-file-upload-icon-png-transparent.png">
-</head>
+    
 <style>
     body {
         color: #007bff;
@@ -155,13 +154,14 @@ h1 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 
 }
+ </style>
+</head>
 
-</style>
-    <body> <body style="background-color:powderblue;">
+<body style="background-color:powderblue;">
 <h1> Fish Finder Submitter</h1>
     <div class="form-container">
-        <form>
-            <label for="username">Full Name</label>
+        <form name="fishFinderForm" method="post" enctype="multipart/form-data" action="#">
+            <label for="u">Full Name</label>
             <input type="text" id="username" name="username" required>
   
             <label for="email">Email</label>
@@ -169,9 +169,10 @@ h1 {
   
             <label for="input_container"> Upload your CSS file:</label>
             <div class="input_container">
-                <input type="file" id="fileUpload"accept=".css">
-            <input type="submit"> 
+             <input type="file" id="fileUpload" name="cssFile" accept=".css">
+        <input type="submit" value="Submit">
         </form>
+    </div>
 
         </style>
         <div class="iframe-container">
